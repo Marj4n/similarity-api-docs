@@ -3,11 +3,11 @@ import { db } from "@/lib/db";
 import { formatDistance } from "date-fns";
 import { getServerSession } from "next-auth";
 import { notFound } from "next/navigation";
-import ApiKeyOptions from "./ApiKeyOptions";
-import { Input } from "./ui/Input";
-import Paragraph from "./ui/Paragraph";
-import Table from "./ui/Table";
-import Heading from "./ui/Heading";
+import ApiKeyOptions from "@/components/ApiKeyOptions";
+import { Input } from "@/ui/Input";
+import Paragraph from "@/ui/Paragraph";
+import Table from "@/ui/Table";
+import Heading from "@/ui/Heading";
 
 const ApiDashboard = async ({}) => {
   const user = await getServerSession(authOptions);
